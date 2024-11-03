@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Logo from "./components/Logo";
 import Hero from "./components/Hero";
 import WorkoutSessions from "./components/WorkoutSessions";
 import Gallery from "./components/Gallery";
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
+      <Logo />
       <Hero />
       <WorkoutSessions />
       <Gallery />

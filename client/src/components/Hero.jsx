@@ -3,11 +3,8 @@ import { Link } from "react-scroll";
 const Hero = () => {
   return (
     <section className="hero">
-      <div class="image-container">
-      <img src="/1.jpg" alt="logo" />
-      </div>
-      <div className="content">
       
+      <div className="content">
         <div className="title">
           <h1>LET'S</h1>
           <h1>GET</h1>
