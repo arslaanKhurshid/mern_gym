@@ -8,6 +8,13 @@ const router = express.Router();
 
 config({ path: "./config.env" });
 
+app.use(
+  cors({
+    origin: [process.env.FRONT_END_URL],
+    methods: ["POST"],
+    credentials: true,
+  })
+);
 
 app.use(
   cors({
