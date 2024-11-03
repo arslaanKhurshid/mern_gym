@@ -21,8 +21,6 @@ const Hero = () => {
         <Link to="prices_list" smooth={true} duration={500}>
         <button>Discover Your Plan</button>
         </Link>
-          
-
         </div>
       </div>
     </section>
