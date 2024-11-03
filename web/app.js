@@ -15,7 +15,8 @@ config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONT_END_URL],
+    // origin: [process.env.FRONT_END_URL],
+    origin: ["http://localhost:5173"], // Adjust as needed
     methods: ["POST"],
     credentials: true,
   })
@@ -66,5 +67,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server listening at port ${process.env.PORT}`);
+  // console.log(`Server listening at port ${process.env.PORT}`);
 });
