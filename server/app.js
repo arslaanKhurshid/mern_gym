@@ -16,9 +16,9 @@ config({ path: "./config.env" });
 app.use(
   cors({
     // origin: [process.env.FRONT_END_URL],
-    origin: ["http://localhost:5173"], // Adjust as needed
-    methods: ["POST"],
-    credentials: true,
+    // origin: ["http://localhost:5173"], // Adjust as needed
+    // methods: ["POST"],
+    // credentials: true,
   })
 );
 
