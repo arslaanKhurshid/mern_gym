@@ -149,16 +149,16 @@ header p {
 @media (max-width: 376px) {
   .hero {
     padding-left: 2rem;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
   header {
     margin-left: 1rem;
   }
   .hero .content .title h1 {
-    font-size: 4.0rem; /* Adjust to fit smaller screens */
+    font-size: 2.6rem; /* Adjust to fit smaller screens */
   }
   .hero .content .sub-title p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .hero .content .buttons {
     padding-right: 10px;
@@ -167,7 +167,7 @@ header p {
   }
   .hero .content .buttons button {
     font-size: 0.8rem;
-    padding: 15px 22px;
+    padding: 10px 20px;
   }
 }
 
