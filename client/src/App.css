@@ -33,7 +33,7 @@ header p {
 .hero {
   min-height: 100vh;
   position: relative;
-  background: url(/1smol.jpg) rgba(0, 0, 0, 0.588);
+  background: url(/1.png) rgba(0, 0, 0, 0.588);
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
