@@ -33,25 +33,41 @@ header p {
 .hero {
   min-height: 100vh;
   position: relative;
-  background: url(/1.png) rgba(0, 0, 0, 0.588);
+  background: black;
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  padding: 350px 0 70px 0;
+  padding: 170px 0 70px 0;
   padding-left: 7rem;
+  flex-direction: column;
+}
+.hero .image-container {
+  padding-top:  -25px;
+  background-color: black;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.hero .image-container img {
+  max-width: 100%; 
+  height: auto; 
 }
 .hero .content {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  justify-content: center; 
 }
 .hero .content .title {
+  justify-content: center; 
   color: whitesmoke;
   font-size: 4rem;
 }
 .hero .content .sub-title p {
+  justify-content: center; 
   font-weight: 400;
   color: whitesmoke;
   font-size: 1.8rem;
