@@ -2,14 +2,16 @@ import express from "express";
 import { config } from "dotenv";
 import cors from "cors";
 import { sendEmail } from "./utils/sendEmail.js";
-import path from 'path';
+import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 const router = express.Router();
 
+const __filename = fileURLToPath(import.meta.url); // Get the current file's path
+const __dirname = path.dirname(__filename); // Get the directory name
+
 config({ path: "./config.env" });
-
-
 
 app.use(
   cors({
@@ -22,8 +24,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
-
+// Email sending endpoint
 router.post("/send/mail", async (req, res, next) => {
   const { name, email, message } = req.body;
   if (!name || !email || !message) {
@@ -48,7 +49,7 @@ router.post("/send/mail", async (req, res, next) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: " Internal Server Error",
+      message: "Internal Server Error",
     });
   }
 });
@@ -63,7 +64,6 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
 });
-
 
 app.listen(process.env.PORT, () => {
   console.log(`Server listening at port ${process.env.PORT}`);
