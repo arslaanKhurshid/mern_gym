@@ -22,7 +22,7 @@ const Contact = () => {
           message,
         },
         {
-          withCredentials: true,
+          // withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
       );

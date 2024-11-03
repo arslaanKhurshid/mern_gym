@@ -56,7 +56,7 @@ router.post("/send/mail", async (req, res, next) => {
 });
 
 // Use the API router
-app.use("/api", router);
+app.use(router);
 
 // // Serve static files
 // app.use(express.static(path.join(__dirname, '../client/dist')));
@@ -67,5 +67,5 @@ app.use("/api", router);
 // });
 
 app.listen(process.env.PORT, () => {
-  // console.log(`Server listening at port ${process.env.PORT}`);
+  console.log(`Server listening at port ${process.env.PORT}`);
 });
