@@ -58,7 +58,7 @@ router.post("/send/mail", async (req, res, next) => {
   }
 });
 
-app.use(router);
+app.use("/api", router);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server listening at port ${process.env.PORT}`);
